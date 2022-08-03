@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-
+import './App.css'
+import cats from './mockCats' 
 import Header from './components/Header'
 import Footer from './components/Footer'
 import CatIndex from './pages/CatIndex'
@@ -16,7 +17,7 @@ import {
   Switch
 } from 'react-router-dom'
 
-import cats from './mockCats.js'
+
 
 class App extends Component {
   constructor(props){
