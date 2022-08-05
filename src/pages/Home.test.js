@@ -1,23 +1,20 @@
-import React from 'react'
-import Enzyme, { shallow } from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
-import Home from './Home'
+import React from "react";
+import Enzyme, { shallow } from "enzyme";
+import Adapter from "enzyme-adapter-react-16";
+import Home from "./Home";
 
-
-Enzyme.configure({ adapter: new Adapter() })
+Enzyme.configure({ adapter: new Adapter() });
 
 describe("When Home renders", () => {
-    let renderedHome;
+  let renderedHome;
 
-    beforeEach(() => {
-      renderedHome = shallow(<Home />);
-    });
+  beforeEach(() => {
+    renderedHome = shallow(<Home />);
+  });
 
-    it("displays a card image", () => {
-      
+  it("displays a card image", () => {
+    const renderedCardImg = renderedHome.find("CardImg");
 
-      const renderedCardImg = renderedHome.find("CardImg")
-
-      expect(renderedCardImg.length).toEqual(1)
-    })
-  })
+    expect(renderedCardImg.length).toEqual(1);
+  });
+});
