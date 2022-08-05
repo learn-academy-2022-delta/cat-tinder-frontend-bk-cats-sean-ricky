@@ -1,35 +1,36 @@
-import React, { Component } from 'react'
-import {Card, CardBody, CardTitle, CardText, CardSubtitle, Button} from 'reactstrap'
-import MMLL from '../assets/MMLL.png'
+import React, { Component } from "react";
+import {
+  Card,
+  CardImg,
+  CardImgOverlay,
+  CardTitle,
+  CardText,
+} from "reactstrap";
+import MarvelMingleLogo from "../assets/MarvelMingleLogo.jpg";
 
 class Home extends Component {
-    render() {
-        return (
-         <Card
-           style={{
-           width: '30rem'
-  }}
->
-  <img src={MMLL} alt="logo for MMLL" className="MMLL" />
-
-         <CardBody>
-         <CardTitle tag="h5">
-      
-         </CardTitle>
-         <CardSubtitle
-           className="mb-2 text-muted"
-           tag="h6"
->
-         </CardSubtitle>
-         <CardText>
-      
-         </CardText>
-         <Button>
-          SIGN IN
-         </Button>
-         </CardBody>
-         </Card>
-  )
- }
+  render() {
+    return (
+      <div>
+        <Card inverse>
+          <CardImg
+            alt="Card image cap"
+            src={MarvelMingleLogo}
+            style={{
+              height: 700,
+              width: "100%",
+            }}
+          />
+          <CardImgOverlay>
+            <CardTitle tag="h5">MarvelMingle</CardTitle>
+            <CardText></CardText>
+            <CardText>
+              <small className="text-muted"></small>
+            </CardText>
+          </CardImgOverlay>
+        </Card>
+      </div>
+    );
+  }
 }
-export default Home
+export default Home;

@@ -1,23 +1,23 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: bold,
+  font-family: bold;
 }
 .page-body {
   text-align: center;
   margin: 3rem;
   height: 110vh;
+  background-color: #000000;
 }
 
-/* ---FOOTER--- */
-footer {
+.my-2 {
   font-size: 20px;
   position: fixed;
-  bottom: 0;
   width: 100%;
-  background-color: #ff0000;
+  background-color: #000000;
   display: flex;
   justify-content: space-around;
+  height: 100px;
 }
 a {
   color: #ffffff !important;
@@ -29,7 +29,6 @@ a:hover {
   text-decoration: underline !important;
 }
 
-/* ---FORMS--- */
 form {
   margin-left: 20%;
   margin-right: 20%;
@@ -38,11 +37,12 @@ input {
   text-align: center;
 }
 
-/* ---HEADER--- */
-header {
+.header {
   background-color: #000000;
   display: flex;
   justify-content: space-between;
+  height: 80px;
+  font-size: 26px;
 }
 .MML {
   width: 150px;
@@ -52,18 +52,15 @@ header {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  padding-right: 50px;
+  padding-right: 100px;
 }
 
-/* ---HOME--- */
-/* .raisins {
-  height: 500px;
-  border-radius: 50%;
-  border: 3px solid black;
-} */
+.spinner-home {
+  border-color: rgb(255, 0, 0);
+  font-size: 15px;
+}
 
-/* ---NOT FOUND--- */
-.cat-friend {
+.NotFound {
   width: 400px;
   border: 1px solid black;
   border-radius: 10px;
