@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './App.css'
-import cats from './mockCats' 
+import cats from './mockCats'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import CatIndex from './pages/CatIndex'
@@ -46,24 +46,3 @@ class App extends Component {
 }
 
 export default App
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
