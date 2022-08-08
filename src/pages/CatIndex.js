@@ -38,6 +38,9 @@ class CatIndex extends Component {
                       </CardSubtitle>
                     <NavLink to={`/catshow/${cat.id}`}>
                       <Button
+                        color="danger"
+                        outline
+                        size=""
                         className="indexButton"
                         alais="submit"
                         onClick={this.handleSubmit}

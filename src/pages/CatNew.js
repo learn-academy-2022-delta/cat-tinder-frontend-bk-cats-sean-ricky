@@ -63,6 +63,7 @@ class CatNew extends Component {
         <p>PLEASE FILL IN THE REQUIRED INFORMATION </p>
         <p>. </p>
         <Button
+         color="danger"
          className="joinButton"
          alais="submit"
          onClick={this.handleSubmit}

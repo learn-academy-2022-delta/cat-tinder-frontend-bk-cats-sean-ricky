@@ -20,7 +20,7 @@ class App extends Component {
     }
   }
 
- createNewCat = (theNewCatObject) => {
+createNewCat = (theNewCatObject) => {
 }
 updateCat = (cat, id) => {
 }
