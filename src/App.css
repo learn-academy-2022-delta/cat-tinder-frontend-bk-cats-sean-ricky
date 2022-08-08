@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: bold;
+  font-family: "verdana";
 }
 .page-body {
   text-align: center;
@@ -11,22 +11,23 @@
 }
 
 .my-2 {
-  font-size: 20px;
+  font-size: 35px;
   position: fixed;
   width: 100%;
-  background-color: #e20000;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-around;
   height: 100px;
+  
 }
 a {
-  color: #ffffff !important;
+  color: #000000 !important;
   text-decoration: none !important;
 }
 a:hover {
   cursor: pointer !important;
-  color: #ffffff !important;
-  text-decoration: underline !important;
+  color: #de0000 !important;
+  text-decoration: bold  !important;
 }
 
 form {
@@ -38,21 +39,22 @@ input {
 }
 
 .header {
-  background-color: #e20000;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  height: 100px;
   font-size: 26px;
 }
 .MML {
-  width: 150px;
+  width: 290px;
   margin-left: 20px;
 }
-.nav-links {
+.nav-links {              
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   padding-right: 100px;
+  color:#000000
 }
 
 .spinner-home {
@@ -68,4 +70,55 @@ input {
 
 .formform {
   background-color: #000000
+}
+
+.RSTECH {
+  width: 125px;
+  margin: auto;
+
+}
+
+.signinButton {
+  width: auto;
+  margin-left: 300px;
+  background-color: rgb(230, 0, 0);
+  color:rgb(230, 0, 0)
+}
+
+.joinButton {
+  margin-left: 300px
+}
+
+.iidd {
+font-size: 35px; 
+margin-left: 100px
+}
+
+.iiddi {
+font-size: 35px;
+margin-left: 20px
+}
+
+.indexButton {
+ margin-left: 1170px;
+}
+
+.showButton {
+margin-left: 1200px
+}
+
+.showiidd {
+  font-size: 30px; 
+margin-left: 10px;
+
+
+}
+.showiiddi {
+  font-size: 29px; 
+margin-left: 10px
+}
+
+.showiiddii {
+  font-size: 29px; 
+margin-left: 10px
 }

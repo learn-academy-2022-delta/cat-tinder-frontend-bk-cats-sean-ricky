@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Card, CardImg, Form, FormGroup, Label, Input, Button } from "reactstrap";
-import { Redirect } from 'react-router-dom'
-import MarvelMingleLogo from "../assets/MarvelMingleLogo.jpg";
+import { Redirect} from 'react-router-dom'
+import JOIN from "../assets/JOIN.jpg";
 
 class CatNew extends Component {
   constructor(props) {
@@ -13,6 +13,7 @@ class CatNew extends Component {
         desires: "",
         pick_up_line: "",
         image: "",
+        image2: ""
       },
       submitted:false
     };
@@ -32,7 +33,7 @@ class CatNew extends Component {
         <Card>
             <CardImg
             alt="Card image cap"
-            src={MarvelMingleLogo}
+            src={JOIN}
             style={{
               height: 700,
               width: "100%",
@@ -40,13 +41,9 @@ class CatNew extends Component {
             />
       <Form>
         <FormGroup>
-          <Label for="alias">ALAIS</Label>
-          <Input type="text" bsSize="lg"
-                 className="mb-3"
-                 placeholder="" onChange={this.handleChange} />
-          
-                 
-        </FormGroup>
+        <Label for="age">ALAIS</Label>
+          <Input type="text" alais="alais" onChange={this.handleChange} />
+          </FormGroup>
         <FormGroup>
           <Label for="age">AGE</Label>
           <Input type="text" alais="age" onChange={this.handleChange} />
@@ -56,13 +53,20 @@ class CatNew extends Component {
           <Input type="text" alais="desires" onChange={this.handleChange} />
         </FormGroup>
         <FormGroup>
-          <Label for="image">IMAGE</Label>
+          <Label for="image">PROFILE IMAGE</Label>
           <Input type="text" alais="image" onChange={this.handleChange} />
         </FormGroup>
+        <FormGroup>
+          <Label for="image2">SHOWCASE IMAGE</Label>
+          <Input type="text" alais="image2" onChange={this.handleChange} />
+        </FormGroup>
+        <p>PLEASE FILL IN THE REQUIRED INFORMATION </p>
+        <p>. </p>
         <Button
+         className="joinButton"
          alais="submit"
          onClick={this.handleSubmit}
-         >SUBMIT APP</Button>
+         >WELCOME</Button>
          { this.state.submitted && <redirect to="/catindex"/>}
 
 

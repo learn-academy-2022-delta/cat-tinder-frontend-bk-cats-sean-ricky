@@ -20,15 +20,30 @@ class CatIndex extends Component {
                 <Card key={cat.id}>
                   <CardImg
                     top
-                    width="50%"
+                    width="auto"
+                    height="1250"
                     src={cat.image}
                     alt="Card image cap"
                   />
                   <CardBody>
-                    <CardTitle>{cat.alias}</CardTitle>
-                    <CardSubtitle>{cat.age}</CardSubtitle>
+                    <CardTitle
+                    className="iiddi"
+                    >
+                      {cat.alias}
+                      </CardTitle>
+                    <CardSubtitle
+                      className="iidd"
+                      >
+                      {cat.age}
+                      </CardSubtitle>
                     <NavLink to={`/catshow/${cat.id}`}>
-                      <Button>SHOOT YOUR SHOT</Button>
+                      <Button
+                        className="indexButton"
+                        alais="submit"
+                        onClick={this.handleSubmit}
+                      >
+                        SHOOT YOUR SHOT
+                      </Button>
                     </NavLink>
                   </CardBody>
                 </Card>
