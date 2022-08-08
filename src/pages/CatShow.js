@@ -5,20 +5,30 @@ import {
   CardBody,
   CardTitle,
   CardSubtitle,
-  CardText
+  CardText,
+  NavLink,
+  Button,
 } from "reactstrap";
+import { Redirect } from "react-router-dom";
 
 class CatShow extends Component {
   render() {
-    let { cat } = this.props
+    let { cat } = this.props;
     return (
       <>
         <Card>
-          <CardImg top width="50%" src={cat.image} alt="Card image cap" />
+          <CardImg top width="auto" src={cat.image2} alt="Card image cap" />
           <CardBody>
-            <CardTitle>{cat.alias}{cat.name}</CardTitle>
-            <CardSubtitle>{cat.alais}</CardSubtitle>
-            <CardText>{cat.alais}</CardText>
+            <CardTitle className="showiidd">
+              {cat.alias} {cat.age}
+            </CardTitle>
+            <CardSubtitle className="showiiddi">{cat.desires}</CardSubtitle>
+            <CardText className="showiiddii">{cat.pick_up_line}</CardText>
+            <NavLink to={`/catedit/${this.props.cat.id}`}>
+              <Button
+              className="showButton"
+              >EDIT PROFILE</Button>
+            </NavLink>
           </CardBody>
         </Card>
       </>
