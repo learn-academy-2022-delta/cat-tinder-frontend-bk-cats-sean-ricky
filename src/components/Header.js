@@ -11,13 +11,13 @@ class Header extends Component {
         </NavLink>
         <div className="nav-links">
           <ul>
-            <NavLink to="/catedit">Sign In</NavLink>
+            <NavLink to="/catedit">SIGN IN</NavLink>
           </ul>
           <ul>
-            <NavLink to="/catindex">Meet The Community</NavLink>
+            <NavLink to="/catindex">MEET THE UNIVERSE</NavLink>
           </ul>
           <ul>
-            <NavLink to="/catnew">Join The Community</NavLink>
+            <NavLink to="/catnew">JOIN THE UNIVERSE</NavLink>
           </ul>
         </div>
       </header>
